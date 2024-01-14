@@ -1,5 +1,5 @@
 {
-  "name": "REACT-BACK-NEW",
+  "name": "BACKEND",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,7 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "simpsonSeed": "node ./src/seeds.js"
+    "seedBooks": "node ./src/seeds/books.seed.js",
+    "seedAuthors": "node ./src/seeds/authors.seed.js",
+    "seedCollections": "node ./src/seeds/collections.seed.js",
+    "seedUniverse": "node ./src/seeds/universe.seeds.js",
+    "image": "node src/api/images/uploads.js"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +25,9 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.0",
-    "mongoose": "^7.0.4"
+    "cloudinary": "^1.41.0",
+    "image-to-uri": "^1.0.0",
+    "mongoose": "^8.0.2",
+    "multer": "^1.4.5-lts.1"
   }
 }
