@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCI FI Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+    </header>
+    <div class="container">
+        <h1 class="container-form-title">¡Make a great library SYFI!</h1>
+        <div class="container-form">
+        <form id="bookForm" action="action" method="POST" enctype="multipart/form-data">
+            <input type="text" id="name" class="name" placeholder="Title" required>
+            <input type="number" id="publication" class="publication" placeholder="publication year">
+            <input type="text" id="universe" class="universe" placeholder="Universe">
+            <input type="text" id="series" name="series" placeholder="collection">
+            <input type="file" id="picture" class="picture" placeholder="Please, only files .JPG, .JPEG y .PNG">
+            <button type="submit" class="special">Add book</button>
+        </form>
+        <form id="authorForm" action="action" method="POST" enctype="multipart/form-data">
+            <input type="text" id="name" class="name" placeholder="Name" required>
+            <input type="text" id="country" class="country" placeholder="Country" required>
+            <input type="text" id="titles" class="titles" placeholder="Title">
+            <input type="file" id="picture" class="picture" placeholder="Please, only files .JPG, .JPEG y .PNG">
+            <button type="submit" class="special">Add Author</button>
+        </form>
+    </div>
+    <div class="container-list">
+        <h2 class="container-list-titlebooks">My SCI FI Collection</h2>
+        <div id="booksList"></div>
+        <h2 class="container-list-titleauthors">My inlove authors</h2>
+        <div id="authorsList"></div>      
+    </div>
+    <footer>
+        <div class="footer-copy">
+            <img id="copy" src="https://res.cloudinary.com/dmbeu9ipe/image/upload/v1701930289/atnd56curyzrlz1nrrtd.png" alt="copy-logo"> 
+            <p class="I">Luis Campos Pousa * Upgrade_Hub</p>
+        </div>
+        <img id="upgrade" src="https://res.cloudinary.com/dmbeu9ipe/image/upload/v1701930304/rxiscpaw8slxxivqjwq7.png" alt="upgrade-logo"> 
+    </footer>
+    <script src="scripts.js" defer></script>
+</body>
+</html>
